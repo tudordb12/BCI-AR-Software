@@ -16,7 +16,7 @@ def youtube_search(query):
     search_response = youtube.search().list(
         q=query,
         part='snippet',
-        maxResults=5,  # Number of search results to return
+        maxResults=6,  # Number of search results to return
         type='video',  # Ensure we are only getting video results
         eventType='completed'  # Ensure we are only getting non-live video results
     ).execute()
