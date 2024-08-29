@@ -17,7 +17,7 @@ public class TextToSpeech : MonoBehaviour
     private async void Start()
     {
         
-        var credentials = new BasicAWSCredentials("AKIARLFC5TNRCRFHOMFO", "ZEMnMpofcB3yQKwWL69E5+XADGuFyjp3oQ0ahOVL");
+
         var client = new AmazonPollyClient(credentials, Amazon.RegionEndpoint.EUCentral1);
         var request = new SynthesizeSpeechRequest()
         {
